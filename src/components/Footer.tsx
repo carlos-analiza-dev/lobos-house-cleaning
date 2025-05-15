@@ -1,0 +1,68 @@
+import { Facebook, Instagram } from "lucide-react";
+import React from "react";
+
+const Footer = () => {
+  return (
+    <div className="px-6 py-12 md:px-24 md:py-14 lg:px-44 lg:py-24 bg-gray-700">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p className="text-lg md:text-xl font-bold text-sky-400">
+            Nuestros Servicios
+          </p>
+          <div className="mt-5">
+            <p className="text-white mt-3">Limpieza Basica</p>
+            <p className="text-white mt-3">Limpieza Profunda</p>
+            <p className="text-white mt-3">Limpieza de Cocinas</p>
+            <p className="text-white mt-3">Limpieza y Cuidado de Pisos</p>
+            <p className="text-white mt-3">Servicio de Lavanderia</p>
+            <p className="text-white mt-3">Limpieza de Garaje</p>
+            <p className="text-white mt-3">Limpieza de Construccion</p>
+          </div>
+        </div>
+        <div>
+          <p className="text-lg md:text-xl font-bold text-sky-400">
+            Areas Cubiertas en Tennessee Chattanooga
+          </p>
+          <div className="mt-5">
+            <p className="text-white mt-3">Tennessee Chattanooga Norte</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Sur</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Este</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Oeste</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Noreste</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Sureste</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Centro</p>
+          </div>
+        </div>
+        <div>
+          <p className="text-lg md:text-xl font-bold text-sky-400">
+            Detalles de la empresa
+          </p>
+          <div className="mt-5">
+            <p className="text-white mt-3">
+              107 Culver St Chattanooga, TN 37415
+            </p>
+            <p className="text-white mt-3">
+              <span className="text-sky-400">Telefono:</span>
+              {""} +1 423-208-4947
+            </p>
+            <p className="text-white mt-3">
+              <span className="text-sky-400">Correo Electromico:</span>
+              {""} luattany9090@yahoo.com
+            </p>
+          </div>
+        </div>
+        <div>
+          <p className="text-lg md:text-xl font-bold text-sky-400">
+            Redes Sociales
+          </p>
+          <div className="mt-5 flex gap-5 text-white">
+            <Facebook className="cursor-pointer" />
+            <Instagram className="cursor-pointer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
