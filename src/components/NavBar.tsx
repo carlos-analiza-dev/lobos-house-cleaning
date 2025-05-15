@@ -71,6 +71,7 @@ const NavBar = () => {
 
         <div className="hidden md:flex items-center md:order-2 space-x-4 rtl:space-x-reverse">
           <button
+            onClick={openWhatsApp}
             type="button"
             className="flex items-center cursor-pointer gap-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 transition-all duration-200 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
