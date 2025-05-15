@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Estimados = () => {
   const openWhatsApp = () => {
-    const phoneNumber = "+50487709116";
+    const phoneNumber = "+14232084947";
 
     const message =
       "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
