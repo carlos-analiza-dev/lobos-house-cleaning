@@ -38,6 +38,19 @@ const Elegirnos = () => {
     "/images/img5.jpeg",
   ];
 
+  const openWhatsApp = () => {
+    const phoneNumber = "+50487709116";
+
+    const message =
+      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="px-6 py-12 md:px-24 md:py-14 lg:px-44 lg:py-24 bg-gray-50">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
@@ -91,9 +104,10 @@ const Elegirnos = () => {
           </motion.ul>
 
           <motion.button
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 self-start flex items-center"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 self-start flex items-center cursor-pointer"
             variants={fadeUp}
             custom={beneficios.length + 3}
+            onClick={openWhatsApp}
           >
             Contactar ahora
             <svg

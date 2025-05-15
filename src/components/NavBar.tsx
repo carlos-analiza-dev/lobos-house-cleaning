@@ -13,6 +13,19 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = "+50487709116";
+
+    const message =
+      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-sm">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-1">
@@ -35,6 +48,7 @@ const NavBar = () => {
 
           <div className="flex items-center md:order-2 space-x-4 rtl:space-x-reverse md:hidden">
             <button
+              onClick={openWhatsApp}
               type="button"
               className="flex items-center cursor-pointer gap-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 md:text-sm md:px-4 md:py-2.5 transition-all duration-200 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >

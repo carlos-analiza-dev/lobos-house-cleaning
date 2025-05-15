@@ -33,6 +33,19 @@ const DescripcionEmp = () => {
     },
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = "+50487709116";
+
+    const message =
+      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="px-6 py-12 md:px-24 md:py-14 lg:px-44 lg:py-24 gap-4">
       <motion.div
@@ -68,6 +81,7 @@ const DescripcionEmp = () => {
               className="bg-blue-600 hover:bg-blue-800 text-white p-3 rounded-2xl cursor-pointer flex items-center gap-2 transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={openWhatsApp}
             >
               Consultar precios y disponibilidad
               <Phone size={18} />

@@ -10,7 +10,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="mt-20">
+    <div className="md:mt-20">
       <section>
         <InicioHome />
       </section>
