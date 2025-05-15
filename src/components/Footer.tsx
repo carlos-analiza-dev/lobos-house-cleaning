@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, MapPin } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -38,8 +38,8 @@ const Footer = () => {
             Detalles de la empresa
           </p>
           <div className="mt-5">
-            <p className="text-white mt-3">
-              107 Culver St Chattanooga, TN 37415
+            <p className="text-white mt-3 flex gap-2 items-center">
+              <MapPin /> 107 Culver St Chattanooga, TN 37415
             </p>
             <p className="text-white mt-3">
               <span className="text-sky-400">Telefono:</span>
@@ -57,7 +57,6 @@ const Footer = () => {
           </p>
           <div className="mt-5 flex gap-5 text-white">
             <Facebook className="cursor-pointer" />
-            <Instagram className="cursor-pointer" />
           </div>
         </div>
       </div>
