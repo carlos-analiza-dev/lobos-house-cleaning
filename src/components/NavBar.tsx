@@ -29,7 +29,7 @@ const NavBar = () => {
               alt="Cleaning Web Logo"
             />
             <span className="self-center text-base md:text-lg lg:text-2xl font-bold whitespace-nowrap dark:text-white text-gray-800">
-              Lobo's House<span className="text-blue-600">Cleaning</span>
+              Lobo&#39;s House<span className="text-blue-600">Cleaning</span>
             </span>
           </Link>
 

@@ -10,7 +10,7 @@ const poppins = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Lobo's House Cleaning",
+  title: "Lobo&#39;s House Cleaning",
   description:
     "On this website you can see the quality of our cleaning services.",
 };

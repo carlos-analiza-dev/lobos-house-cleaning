@@ -38,7 +38,9 @@ const DescServicios = () => {
       >
         <h1 className="text-2xl md:text-4xl text-center">
           Algunos servicios de limpieza que ofrecemos en{" "}
-          <span className="text-blue-600 font-bold">Lobo's House Cleaning</span>
+          <span className="text-blue-600 font-bold">
+            Lobo&#39;s House Cleaning
+          </span>
         </h1>
       </motion.div>
 
@@ -53,7 +55,7 @@ const DescServicios = () => {
         >
           <h1>
             <span className="text-blue-600 font-bold">
-              Lobo's House Cleaning
+              Lobo&#39;s House Cleaning
             </span>{" "}
             es una plataforma confiable que te conecta con servicios
             profesionales de limpieza y mudanza en tu área...

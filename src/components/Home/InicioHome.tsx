@@ -19,11 +19,11 @@ const InicioHome = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-6xl">
-            Lobo's House Cleaning
+            Lobo&#39;s House Cleaning
           </h2>
 
           <p className="mt-8 text-lg font-medium text-white/90 sm:text-xl">
-            En Lobo's House Cleaning nos caracterizamos por tener el mejor
+            En Lobo&#39;s House Cleaning nos caracterizamos por tener el mejor
             servicio y los responsables más confiables en el área.
           </p>
         </div>
