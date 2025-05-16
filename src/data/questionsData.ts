@@ -35,8 +35,8 @@ export const faqs = [
       "Tenemos un sistema seguro de custodia de llaves con registro digital. Puedes dejarnos un juego de llaves (opcional) bajo estrictos protocolos de seguridad, o podemos coordinarnos para que estés presente durante el servicio.",
   },
   {
-    question: "¿Qué áreas de Londres cubren?",
+    question: "¿Qué áreas de Tennessee Chattanooga cubren?",
     answer:
-      "Actualmente cubrimos toda el área metropolitana de Londres. Para ubicaciones en los alrededores, contáctanos para verificar disponibilidad. Estamos expandiendo constantemente nuestra cobertura.",
+      "Actualmente cubrimos toda el área metropolitana de Tennessee Chattanooga. Para ubicaciones en los alrededores, contáctanos para verificar disponibilidad. Estamos expandiendo constantemente nuestra cobertura.",
   },
 ];
