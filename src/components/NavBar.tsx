@@ -91,7 +91,6 @@ const NavBar = () => {
               { name: "About us", href: "/about" },
               { name: "Services", href: "/services" },
               { name: "Pricing", href: "/prices" },
-              { name: "Testimonials", href: "/testimonials" },
             ].map((item) => (
               <li key={item.name}>
                 <Link

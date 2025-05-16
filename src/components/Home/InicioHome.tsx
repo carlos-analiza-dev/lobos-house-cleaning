@@ -9,6 +9,7 @@ const InicioHome = () => {
           src="/images/LobosHome.jpeg"
           alt="Inicio"
           fill
+          priority
           className="object-cover object-right md:object-center"
           quality={100}
         />

@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     <div className="px-8 py-16 md:px-28 md:py-20 lg:px-52 lg:py-32 ">
       <div className="mt-8 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="flex justify-center">
-          <p className="text-lg md:text-xl">
+          <p className="text-xl md:text-3xl font-bold">
             Upssssssss, lo sentimos, no se pudo enconrar esta pagina,{" "}
             <span
               onClick={() => router.back()}

@@ -2,7 +2,7 @@ import Banner from "@/components/Home/Banner";
 import DescripcionEmp from "@/components/Home/DescripcionEmp";
 import DescServicios from "@/components/Home/DescServicios";
 import Elegirnos from "@/components/Home/Elegirnos";
-import Estimados from "@/components/Home/Estimados";
+import Estimados from "@/components/Estimados";
 import Funcionamiento from "@/components/Home/Funcionamiento";
 import InicioHome from "@/components/Home/InicioHome";
 import NuestrosServicios from "@/components/Home/NuestrosServicios";
