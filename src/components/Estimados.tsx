@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import ButtonContactar from "./ButtonContactar";
 
 const Estimados = () => {
   const openWhatsApp = () => {
-    const phoneNumber = "+14232084947";
+    const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
       "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
@@ -36,25 +37,7 @@ const Estimados = () => {
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <button
-          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 self-start flex items-center cursor-pointer"
-          onClick={openWhatsApp}
-        >
-          Contactar ahora
-          <svg
-            className="w-5 h-5 ml-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </button>
+        <ButtonContactar openWhatsApp={openWhatsApp} />
       </motion.div>
     </div>
   );

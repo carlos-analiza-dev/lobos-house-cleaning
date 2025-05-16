@@ -2,8 +2,10 @@
 import {
   AlignVerticalDistributeStart,
   BrickWall,
+  Calendar,
   CheckCheck,
   House,
+  LampDesk,
   Pickaxe,
   Shredder,
   Truck,
@@ -34,6 +36,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "La limpieza regular del hogar que ayuda a mantener el orden y la higiene diaria o semanal, adaptado a tus necesidades.",
       button_title: "Ver Limpieza Basica",
+      href: "/services/basic",
     },
     {
       icon: <CheckCheck />,
@@ -41,6 +44,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Una limpieza detallada del hogar que va más allá de lo superficial, ideal para eliminar suciedad acumulada y alcanzar áreas difíciles, adaptada a tus necesidades.",
       button_title: "Ver Limpieza Profunda",
+      href: "/services/deep",
     },
     {
       icon: <AlignVerticalDistributeStart />,
@@ -48,6 +52,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Servicio especializado para dejar tu cocina reluciente, eliminando grasa, residuos y desinfección de superficies, adaptado a tus necesidades.",
       button_title: "Ver Limpieza de Cocinas",
+      href: "/services/kitchen",
     },
     {
       icon: <BrickWall />,
@@ -55,6 +60,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Servicio enfocado en la limpieza profunda y mantenimiento de todo tipo de pisos, dejando las superficies brillantes, limpias y protegidas según tus necesidades.",
       button_title: "Ver Limpieza y Cuidado de Pisos",
+      href: "/services/floors",
     },
     {
       icon: <Shredder />,
@@ -62,6 +68,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Lavado, secado y doblado de tu ropa con cuidado profesional. Ahorra tiempo y disfruta de prendas limpias, frescas y bien cuidadas.",
       button_title: "Ver Servicio de Lavandería ",
+      href: "/services/laundry",
     },
     {
       icon: <Truck />,
@@ -69,6 +76,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Traslados seguros y organizados, con apoyo en el embalaje, transporte y acomodo de tus pertenencias. Nos encargamos de que tu mudanza sea rápida, ordenada y sin estrés.",
       button_title: "Ver Mudanza y Organización",
+      href: "/services/moving",
     },
     {
       icon: <Warehouse />,
@@ -76,6 +84,7 @@ const NuestrosServicios = () => {
       subtitulo:
         "Eliminamos el desorden, limpiamos a fondo y organizamos tu garaje para que recuperes espacio y funcionalidad. Ideal para mantenerlo limpio, seguro y libre de acumulaciones innecesarias.",
       button_title: "Ver Limpieza de Garaje",
+      href: "/services/garage",
     },
     {
       icon: <Pickaxe />,
@@ -83,6 +92,25 @@ const NuestrosServicios = () => {
       subtitulo:
         "Limpieza detallada después de una obra o remodelación. Eliminamos polvo, escombros y residuos para dejar el espacio listo, seguro y habitable. Ideal para obras nuevas o renovaciones.",
       button_title: "Ver Limpieza de Construcción",
+      href: "/services/construction",
+    },
+    {
+      icon: <LampDesk />,
+      titulo: "Limpieza de Oficinas",
+      subtitulo:
+        "Mantenimiento diario/nocturno para espacios corporativos con personal discreto y eficiente.",
+      button_title: "Ver Limpieza de Oficinas",
+      category: "oficinas",
+      href: "/services/office",
+    },
+    {
+      icon: <Calendar />,
+      titulo: "Limpieza para Airbnb",
+      subtitulo:
+        "Servicio entre huéspedes con estándares hoteleros y checklist fotográfico incluido.",
+      button_title: "Ver Servicio Airbnb",
+      category: "airbnb",
+      href: "/services/airbnb",
     },
   ];
 
@@ -126,6 +154,7 @@ const NuestrosServicios = () => {
               titulo={servicio.titulo}
               subtitulo={servicio.subtitulo}
               button_title={servicio.button_title}
+              href={servicio.href}
             />
           </motion.div>
         ))}

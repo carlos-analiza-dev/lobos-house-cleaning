@@ -85,7 +85,7 @@ const DescServicios = () => {
             {
               color: "bg-red-200",
               icon: <TrendingUp />,
-              value: "7+",
+              value: "10+",
               label: "Servicios disponibles",
             },
             {
@@ -97,7 +97,7 @@ const DescServicios = () => {
             {
               color: "bg-sky-200",
               icon: <User />,
-              value: "5+",
+              value: "10+",
               label: "Limpiadores profesionales",
             },
             {

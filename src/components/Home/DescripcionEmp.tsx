@@ -34,7 +34,7 @@ const DescripcionEmp = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "+14232084947";
+    const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
       "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";

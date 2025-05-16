@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { BrushCleaning, Phone, Smile, User } from "lucide-react";
-import FuncionamientoServices from "./components/FuncionamientoServices";
+import FuncionamientoServices from "../FuncionamientoServices";
 
 const Funcionamiento = () => {
   const container = {
@@ -63,7 +63,7 @@ const Funcionamiento = () => {
             titulo="Reserva via WhatsApp"
             numero={1}
             icono={<Phone className="hidden sm:block" size={20} />}
-            subtitulo="Contáctanos fácilmente por WhatsApp para agendar la limpieza de tu hogar. Solo envíanos un mensaje con la fecha y hora que prefieras: sin llamadas ni complicaciones."
+            subtitulo="Contáctanos fácilmente por WhatsApp para agendar la limpieza de tu hogar, oficina, garage, etc. Solo envíanos un mensaje con la fecha y hora que prefieras: sin llamadas ni complicaciones."
           />
         </motion.div>
 
@@ -81,16 +81,16 @@ const Funcionamiento = () => {
             titulo="Listos para la limpieza"
             numero={3}
             icono={<BrushCleaning className="hidden sm:block" size={20} />}
-            subtitulo="Nuestro equipo llegará listo para dejar impecable cada rincón de tu hogar. Desde quitar el polvo hasta fregar, seguimos una lista de verificación detallada."
+            subtitulo="Nuestro equipo llegará listo para dejar impecable cada rincón de tu hogar, oficina, garage, etc. Desde quitar el polvo hasta fregar, seguimos una lista de verificación detallada."
           />
         </motion.div>
 
         <motion.div variants={item}>
           <FuncionamientoServices
-            titulo="Casa Limpia y fresca"
+            titulo="Espacios Limpios"
             numero={4}
             icono={<Smile className="hidden sm:block" size={20} />}
-            subtitulo="Relájate mientras dejamos tu casa impecable. ¿Quieres mantenerla siempre así? Agenda limpiezas regulares cada semana, cada dos semanas o cuando más te convenga."
+            subtitulo="Relájate mientras dejamos tu espacio impecable. ¿Quieres mantenerla siempre así? Agenda limpiezas regulares cada semana, cada dos semanas o cuando más te convenga."
           />
         </motion.div>
       </motion.div>

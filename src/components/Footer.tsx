@@ -1,4 +1,6 @@
+import { servicios } from "@/data/serviceData";
 import { Facebook, MapPin } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -10,13 +12,15 @@ const Footer = () => {
             Nuestros Servicios
           </p>
           <div className="mt-5">
-            <p className="text-white mt-3">Limpieza Basica</p>
-            <p className="text-white mt-3">Limpieza Profunda</p>
-            <p className="text-white mt-3">Limpieza de Cocinas</p>
-            <p className="text-white mt-3">Limpieza y Cuidado de Pisos</p>
-            <p className="text-white mt-3">Servicio de Lavanderia</p>
-            <p className="text-white mt-3">Limpieza de Garaje</p>
-            <p className="text-white mt-3">Limpieza de Construccion</p>
+            {servicios.map((servicio) => (
+              <Link
+                className="text-white mt-3 block hover:underline"
+                key={servicio.href}
+                href={servicio.href}
+              >
+                {servicio.nombre}
+              </Link>
+            ))}
           </div>
         </div>
         <div>
@@ -47,7 +51,7 @@ const Footer = () => {
             </p>
             <p className="text-white mt-3">
               <span className="text-sky-400">Correo Electromico:</span>
-              {""} luattany9090@yahoo.com
+              {""} loboshousecleaning@gmail.com
             </p>
           </div>
         </div>
@@ -56,7 +60,12 @@ const Footer = () => {
             Redes Sociales
           </p>
           <div className="mt-5 flex gap-5 text-white">
-            <Facebook className="cursor-pointer" />
+            <Link
+              href="https://www.facebook.com/share/19bd8MEXrB/?mibextid=wwXIfr"
+              target="_blank"
+            >
+              <Facebook className="cursor-pointer" />
+            </Link>
           </div>
         </div>
       </div>

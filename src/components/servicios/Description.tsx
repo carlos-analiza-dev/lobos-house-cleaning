@@ -56,7 +56,7 @@ const Description = () => {
 
           <p className="text-lg text-gray-700 mb-6">
             En <strong>Lobo&#39;s House Cleaning</strong>, transformamos
-            espacios desde 2015 con un enfoque profesional que combina{" "}
+            espacios desde 2022 con un enfoque profesional que combina{" "}
             <strong>técnicas certificadas</strong>,
             <strong> productos ecológicos</strong> y una{" "}
             <strong>atención personalizada</strong>.
@@ -117,7 +117,7 @@ const Description = () => {
         variants={staggerContainer}
       >
         {[
-          { number: "500+", label: "Clientes satisfechos" },
+          { number: "1K+", label: "Clientes satisfechos" },
           { number: "98%", label: "Tasa de retención" },
           { number: "24/7", label: "Disponibilidad" },
           { number: "10+", label: "Profesionales" },

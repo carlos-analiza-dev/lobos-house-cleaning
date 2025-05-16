@@ -40,8 +40,8 @@ const InicioHome = () => {
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { label: "Oficinas", value: "1" },
-              { label: "Empleados", value: "3+" },
-              { label: "Servicios", value: "7+" },
+              { label: "Empleados", value: "10+" },
+              { label: "Servicios", value: "10+" },
               { label: "Días libres", value: "Flexibles" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col-reverse">

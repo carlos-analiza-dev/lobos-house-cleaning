@@ -1,30 +1,55 @@
 "use client";
-import { Phone, Menu, X } from "lucide-react";
+import { servicios } from "@/data/serviceData";
+import { s } from "framer-motion/client";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useState, useRef, useEffect } from "react";
 
 const NavBar = () => {
   const path = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log("PATH", path);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const router = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const servicesButtonRef = useRef<HTMLButtonElement>(null);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleServices = () => setIsServicesOpen(!isServicesOpen);
 
   const openWhatsApp = () => {
-    const phoneNumber = "+14232084947";
-
+    const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
     const message =
       "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
-
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
-
     window.open(whatsappUrl, "_blank");
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node) &&
+        servicesButtonRef.current &&
+        !servicesButtonRef.current.contains(event.target as Node)
+      ) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsServicesOpen(false);
+  }, [path]);
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-sm">
@@ -87,25 +112,67 @@ const NavBar = () => {
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {[
-              { name: "About us", href: "/about" },
-              { name: "Services", href: "/services" },
-              { name: "Pricing", href: "/prices" },
-            ].map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block py-2 px-3 rounded-md md:p-0 ${
-                    item.href === path
+            <li>
+              <Link
+                href="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className={`block py-2 px-3 rounded-md md:p-0 ${
+                  path === "/about"
+                    ? "text-blue-600 dark:text-blue-500 font-semibold"
+                    : "text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
+                } transition-colors duration-200`}
+              >
+                About us
+              </Link>
+            </li>
+
+            <li className="relative list-none">
+              <div ref={dropdownRef}>
+                <button
+                  ref={servicesButtonRef}
+                  onClick={toggleServices}
+                  className={`flex items-center justify-between w-full py-2 px-3 rounded-md md:p-0 md:w-auto ${
+                    path.startsWith("/services")
                       ? "text-blue-600 dark:text-blue-500 font-semibold"
                       : "text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   } transition-colors duration-200`}
                 >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
+                  Servicios
+                  <ChevronDown
+                    size={16}
+                    className={`ml-1 transition-transform ${
+                      isServicesOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`absolute z-10 ${
+                    isServicesOpen ? "block" : "hidden"
+                  } mt-1 w-56 rounded-md bg-white shadow-lg dark:bg-gray-800 ring-1 ring-black ring-opacity-5`}
+                >
+                  <div className="py-1">
+                    {servicios.map((servicio) => (
+                      <Link
+                        key={servicio.href}
+                        href={servicio.href}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsServicesOpen(false);
+                        }}
+                        className={
+                          path === servicio.href
+                            ? "block px-4 py-2 text-sm text-sky-700 hover:bg-sky-100 dark:text-sky-300 dark:hover:bg-sky-700"
+                            : "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        }
+                      >
+                        {servicio.nombre}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
