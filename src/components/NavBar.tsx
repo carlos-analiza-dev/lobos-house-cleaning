@@ -1,17 +1,14 @@
 "use client";
 import { servicios } from "@/data/serviceData";
-import { s } from "framer-motion/client";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React, { useState, useRef, useEffect } from "react";
 
 const NavBar = () => {
   const path = usePathname();
-  console.log("PATH", path);
 
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);

@@ -1,6 +1,7 @@
 import { services } from "@/data/serviceData";
 import Image from "next/image";
 import ButtonContactar from "../ButtonContactar";
+import Link from "next/link";
 
 interface Props {
   id: string;
@@ -31,12 +32,12 @@ const ServicioById = ({ id }: Props) => {
         <p className="text-gray-600">
           El servicio solicitado no está disponible en este momento.
         </p>
-        <a
+        <Link
           href="/"
           className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
         >
           Ir al inicio
-        </a>
+        </Link>
       </div>
     );
   }
