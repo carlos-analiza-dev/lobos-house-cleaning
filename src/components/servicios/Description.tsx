@@ -55,8 +55,8 @@ const Description = () => {
           </h1>
 
           <p className="text-lg text-gray-700 mb-6">
-            En <strong>Lobo's House Cleaning</strong>, transformamos espacios
-            desde 2015 con un enfoque profesional que combina{" "}
+            En <strong>Lobo&#39;s House Cleaning</strong>, transformamos
+            espacios desde 2015 con un enfoque profesional que combina{" "}
             <strong>técnicas certificadas</strong>,
             <strong> productos ecológicos</strong> y una{" "}
             <strong>atención personalizada</strong>.
