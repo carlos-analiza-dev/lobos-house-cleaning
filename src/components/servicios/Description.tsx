@@ -31,7 +31,7 @@ const Description = () => {
     },
     {
       icon: <Users className="w-6 h-6 text-sky-600" />,
-      text: "Equipo con varios años de experiencia",
+      text: "Team with several years of experience.",
     },
     {
       icon: <Leaf className="w-6 h-6 text-sky-600" />,
