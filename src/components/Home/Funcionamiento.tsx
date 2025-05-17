@@ -50,7 +50,7 @@ const Funcionamiento = () => {
     >
       <motion.div className="mt-5 flex justify-center" variants={titleVariants}>
         <h1 className="text-xl md:text-5xl font-bold">
-          ¿Cómo funciona nuestro servicio de limpieza?
+          How does our cleaning service work?
         </h1>
       </motion.div>
 
@@ -60,37 +60,37 @@ const Funcionamiento = () => {
       >
         <motion.div variants={item}>
           <FuncionamientoServices
-            titulo="Reserva via WhatsApp"
+            titulo="Book via WhatsApp"
             numero={1}
             icono={<Phone className="hidden sm:block" size={20} />}
-            subtitulo="Contáctanos fácilmente por WhatsApp para agendar la limpieza de tu hogar, oficina, garage, etc. Solo envíanos un mensaje con la fecha y hora que prefieras: sin llamadas ni complicaciones."
+            subtitulo="Easily contact us via WhatsApp to schedule a cleaning service for your home, office, garage, etc. Just send us a message with your preferred date and time—no calls, no hassle."
           />
         </motion.div>
 
         <motion.div variants={item}>
           <FuncionamientoServices
-            titulo="Consulta administrador"
+            titulo="Administrator query"
             numero={2}
             icono={<User className="hidden sm:block" size={20} />}
-            subtitulo="Podrás comunicarte de forma que el administrador contestará cada una de tus consultas acerca del servicio que deseas contratar."
+            subtitulo="You&#39;ll be able to communicate with the administrator and answer any questions you may have about the service you wish to contract."
           />
         </motion.div>
 
         <motion.div variants={item}>
           <FuncionamientoServices
-            titulo="Listos para la limpieza"
+            titulo="Ready for cleaning"
             numero={3}
             icono={<BrushCleaning className="hidden sm:block" size={20} />}
-            subtitulo="Nuestro equipo llegará listo para dejar impecable cada rincón de tu hogar, oficina, garage, etc. Desde quitar el polvo hasta fregar, seguimos una lista de verificación detallada."
+            subtitulo="Our team will arrive ready to leave every corner of your home, office, garage, etc. spotless. From dusting to scrubbing, we follow a detailed checklist."
           />
         </motion.div>
 
         <motion.div variants={item}>
           <FuncionamientoServices
-            titulo="Espacios Limpios"
+            titulo="Clean Spaces"
             numero={4}
             icono={<Smile className="hidden sm:block" size={20} />}
-            subtitulo="Relájate mientras dejamos tu espacio impecable. ¿Quieres mantenerla siempre así? Agenda limpiezas regulares cada semana, cada dos semanas o cuando más te convenga."
+            subtitulo="Relax while we leave your space spotless. Want to keep it that way? Schedule regular cleanings every week, every two weeks, or whenever it suits you best."
           />
         </motion.div>
       </motion.div>

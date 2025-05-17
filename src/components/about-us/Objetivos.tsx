@@ -25,27 +25,25 @@ const Objetivos = () => {
           variants={fadeInUp}
           custom={1}
         >
-          <h1 className="text-2xl md:text-5xl font-bold">Nuestros Objetivos</h1>
+          <h1 className="text-2xl md:text-5xl font-bold">Our Objectives</h1>
           <div className="mt-5">
             <li className="md:text-lg">
-              Garantizar la satisfacción total de nuestros clientes en cada
-              servicio.
+              Guarantee total customer satisfaction with every service.
             </li>
             <li className="md:text-lg">
-              Capacitar continuamente a nuestro personal para asegurar
-              resultados impecables.
+              Continuously train our staff to ensure impeccable results.
             </li>
             <li className="md:text-lg">
-              Ampliar nuestra oferta de servicios a nuevas áreas residenciales,
-              comerciales e industriales.
+              Expand our service offering to new residential, commercial, and
+              industrial areas.
             </li>
             <li className="md:text-lg">
-              Implementar prácticas sostenibles y ecológicas en nuestros
-              procesos de limpieza.
+              Implement sustainable and environmentally friendly practices in
+              our cleaning processes.
             </li>
             <li className="md:text-lg">
-              Construir relaciones a largo plazo con nuestros clientes basadas
-              en la confianza y la calidad.
+              Build long-term relationships with our clients based on trust and
+              quality.
             </li>
           </div>
         </motion.div>

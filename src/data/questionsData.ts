@@ -1,42 +1,42 @@
 export const faqs = [
   {
-    question: "¿Cómo funciona el proceso de reserva?",
+    question: "How does the booking process work?",
     answer:
-      "Puedes reservar nuestros servicios fácilmente a través de nuestro sitio web, por WhatsApp o llamando a nuestro número de atención al cliente. Solo necesitas seleccionar el servicio, fecha y hora preferida, y recibirás una confirmación inmediata.",
+      "You can easily book our services through our website, via WhatsApp, or by calling our customer service number. Just select your preferred service, date, and time, and you'll receive immediate confirmation.",
   },
   {
-    question: "¿Qué métodos de pago aceptan?",
+    question: "What payment methods do you accept?",
     answer:
-      "Aceptamos múltiples formas de pago: efectivo, transferencia bancaria, tarjetas de crédito/débito (Visa, Mastercard) y PayPal. Todos los pagos con tarjeta son procesados de forma segura a través de nuestro sistema encriptado.",
+      "We accept multiple payment methods: cash, bank transfer, credit/debit cards (Visa, Mastercard), and PayPal. All card payments are securely processed through our encrypted system.",
   },
   {
-    question: "¿Proveen los productos de limpieza?",
+    question: "Do you provide cleaning supplies?",
     answer:
-      "Sí, incluimos todos los productos y equipos profesionales necesarios para cada servicio. Usamos productos ecológicos y seguros para niños/mascotas. Si prefieres que usemos productos específicos, puedes indicárnoslo al momento de la reserva.",
+      "Yes, we include all necessary professional cleaning products and equipment for every service. We use eco-friendly, child/pet-safe products. If you prefer us to use specific products, you can let us know when booking.",
   },
   {
-    question: "¿Están asegurados y certificados?",
+    question: "Are you insured and certified?",
     answer:
-      "Absolutamente. Lobo's House Cleaning cuenta con seguro de responsabilidad civil, todos nuestros colaboradores están debidamente capacitados y certificados en técnicas de limpieza profesional, y seguimos los protocolos de seguridad más estrictos.",
+      "Absolutely. Lobo's House Cleaning carries liability insurance, all our team members are properly trained and certified in professional cleaning techniques, and we follow the strictest safety protocols.",
   },
   {
-    question: "¿Puedo programar un servicio recurrente?",
+    question: "Can I schedule recurring service?",
     answer:
-      "¡Claro! Ofrecemos planes de limpieza semanal, quincenal o mensual con descuentos especiales para clientes recurrentes. Podemos ajustar la frecuencia y servicios incluidos según tus necesidades.",
+      "Of course! We offer weekly, biweekly, or monthly cleaning plans with special discounts for recurring customers. We can adjust the frequency and included services to fit your needs.",
   },
   {
-    question: "¿Qué pasa si necesito cancelar o reprogramar?",
+    question: "What if I need to cancel or reschedule?",
     answer:
-      "Puedes cancelar o reprogramar sin costo hasta 24 horas antes de tu cita. Para cancelaciones con menos tiempo, aplica una pequeña tarifa del 10% para cubrir los costos de programación.",
+      "You can cancel or reschedule free of charge up to 24 hours before your appointment. For last-minute cancellations, a small 10% fee applies to cover scheduling costs.",
   },
   {
-    question: "¿Cómo manejan las llaves de mi propiedad?",
+    question: "How do you handle property keys?",
     answer:
-      "Tenemos un sistema seguro de custodia de llaves con registro digital. Puedes dejarnos un juego de llaves (opcional) bajo estrictos protocolos de seguridad, o podemos coordinarnos para que estés presente durante el servicio.",
+      "We have a secure key custody system with digital tracking. You can leave us a set of keys (optional) under strict security protocols, or we can coordinate for you to be present during the service.",
   },
   {
-    question: "¿Qué áreas de Tennessee Chattanooga cubren?",
+    question: "What areas in Chattanooga, Tennessee do you serve?",
     answer:
-      "Actualmente cubrimos toda el área metropolitana de Tennessee Chattanooga. Para ubicaciones en los alrededores, contáctanos para verificar disponibilidad. Estamos expandiendo constantemente nuestra cobertura.",
+      "We currently cover the entire Chattanooga, Tennessee metropolitan area. For surrounding locations, contact us to check availability. We're constantly expanding our service area.",
   },
 ];

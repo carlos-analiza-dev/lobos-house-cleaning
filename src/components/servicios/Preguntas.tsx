@@ -8,7 +8,7 @@ const Preguntas = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -25,7 +25,7 @@ const Preguntas = () => {
     <div className="px-6 py-12 md:px-24 md:py-14 lg:px-44 lg:py-24 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Preguntas Frecuentes
+          Frequently Asked Questions
         </h2>
 
         <div className="space-y-4">
@@ -59,7 +59,7 @@ const Preguntas = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">
-            ¿No encontraste lo que buscabas? Contáctanos directamente
+            Didn&#39;t find what you were looking for? Contact us directly.
           </p>
           <div className="flex justify-center">
             <ButtonContactar openWhatsApp={openWhatsApp} />

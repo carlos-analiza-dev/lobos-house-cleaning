@@ -23,11 +23,11 @@ const Description = () => {
   const features = [
     {
       icon: <Sparkles className="w-6 h-6 text-sky-600" />,
-      text: "Resultados impecables garantizados",
+      text: "Flawless results guaranteed",
     },
     {
       icon: <Shield className="w-6 h-6 text-sky-600" />,
-      text: "Personal verificado y confiable",
+      text: "Verified and reliable staff",
     },
     {
       icon: <Users className="w-6 h-6 text-sky-600" />,
@@ -35,7 +35,7 @@ const Description = () => {
     },
     {
       icon: <Leaf className="w-6 h-6 text-sky-600" />,
-      text: "Productos ecológicos y seguros",
+      text: "Ecological and safe products",
     },
   ];
 
@@ -50,23 +50,22 @@ const Description = () => {
       >
         <motion.div variants={fadeInUp}>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Más que limpieza,{" "}
-            <span className="text-sky-600">cuidamos tu espacio</span>
+            More than cleaning,{" "}
+            <span className="text-sky-600">we take care of your space</span>
           </h1>
 
           <p className="text-lg text-gray-700 mb-6">
-            En <strong>Lobo&#39;s House Cleaning</strong>, transformamos
-            espacios desde 2022 con un enfoque profesional que combina{" "}
-            <strong>técnicas certificadas</strong>,
-            <strong> productos ecológicos</strong> y una{" "}
-            <strong>atención personalizada</strong>.
+            In <strong>Lobo&#39;s House Cleaning</strong>, We have been
+            transforming spaces since 2022 with a professional approach that
+            combines <strong>certified techniques</strong>,
+            <strong> ecological products</strong> y una{" "}
+            <strong>personalized attention</strong>.
           </p>
 
           <p className="text-lg text-gray-700 mb-8">
-            Nuestro equipo de <strong>+10 especialistas</strong> está entrenado
-            en los más altos estándares de limpieza residencial y comercial,
-            adaptándose a las necesidades únicas de cada cliente en Tennessee
-            Chattanooga.
+            Our team of <strong>10+ specialists</strong> is trained to the
+            highest standards of residential and commercial cleaning, adapting
+            to the unique needs of each client in Chattanooga, Tennessee.
           </p>
 
           <motion.div
@@ -102,7 +101,7 @@ const Description = () => {
             <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg">
               <p className="text-sm font-medium text-gray-800">
                 <CheckCircle className="inline mr-2 text-green-600" />
-                Equipos certificados
+                Certified equipment
               </p>
             </div>
           </div>
@@ -117,10 +116,10 @@ const Description = () => {
         variants={staggerContainer}
       >
         {[
-          { number: "1K+", label: "Clientes satisfechos" },
-          { number: "98%", label: "Tasa de retención" },
-          { number: "24/7", label: "Disponibilidad" },
-          { number: "10+", label: "Profesionales" },
+          { number: "1K+", label: "Satisfied customers" },
+          { number: "98%", label: "Retention rate" },
+          { number: "24/7", label: "Availability" },
+          { number: "10+", label: "Professionals" },
         ].map((stat, i) => (
           <motion.div
             key={i}

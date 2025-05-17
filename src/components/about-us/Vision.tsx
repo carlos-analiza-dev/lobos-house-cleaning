@@ -42,12 +42,12 @@ const Vision = () => {
           custom={1}
           className="h-full flex flex-col justify-center order-1 md:order-2"
         >
-          <h1 className="text-xl md:text-5xl font-bold">Nuestra Visión</h1>
+          <h1 className="text-xl md:text-5xl font-bold">Our Vision</h1>
           <p className="mt-5 md:text-lg">
-            Ser la empresa líder en servicios de limpieza en nuestra región,
-            reconocida por la excelencia, la confianza y la innovación en
-            nuestras soluciones, expandiéndonos a nuevos sectores sin perder la
-            esencia de nuestro compromiso con el cliente.
+            To be the leading cleaning services company in our region,
+            recognized for the excellence, trust, and innovation in our
+            solutions, expanding into new sectors without losing the essence of
+            our commitment to our customers.
           </p>
         </motion.div>
       </div>

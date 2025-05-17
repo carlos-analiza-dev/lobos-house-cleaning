@@ -37,7 +37,7 @@ const DescripcionEmp = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -63,16 +63,15 @@ const DescripcionEmp = () => {
             className="text-3xl md:text-5xl font-bold"
             variants={itemVariants}
           >
-            Servicios de limpieza profesionales en Tenesse, Personal{" "}
-            <span className="text-blue-600">certificado y de confianza</span> en
-            los que puedes confiar.
+            Professional cleaning services in Tennessee.{" "}
+            <span className="text-blue-600">Certified and trustworthy</span>{" "}
+            staff you can rely on.
           </motion.h1>
 
           <motion.div className="mt-5" variants={itemVariants}>
             <h3 className="text-lg font-bold md:text-xl">
-              Reserva servicios de limpieza en cuestion de segundos con los
-              mejores profesionales en el area, todos los servicios en un solo
-              lugar.
+              Book cleaning services in seconds with the best professionals in
+              the area, all services in one place.
             </h3>
           </motion.div>
 
@@ -83,7 +82,7 @@ const DescripcionEmp = () => {
               whileTap={{ scale: 0.95 }}
               onClick={openWhatsApp}
             >
-              Consultar precios y disponibilidad
+              Check prices and availability
               <Phone size={18} />
             </motion.button>
           </motion.div>

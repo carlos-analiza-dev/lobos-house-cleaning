@@ -7,7 +7,7 @@ const InicioHome = () => {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/LobosHome.jpeg"
-          alt="Inicio"
+          alt="Home"
           fill
           priority
           className="object-cover object-right md:object-center"
@@ -24,8 +24,8 @@ const InicioHome = () => {
           </h2>
 
           <p className="mt-8 text-lg font-medium text-white/90 sm:text-xl">
-            En Lobo&#39;s House Cleaning nos caracterizamos por tener el mejor
-            servicio y los responsables más confiables en el área.
+            At Lobo&#39;s House Cleaning, we are known for providing the best
+            service and the most reliable staff in the area.
           </p>
         </div>
 
@@ -39,10 +39,10 @@ const InicioHome = () => {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { label: "Oficinas", value: "1" },
-              { label: "Empleados", value: "10+" },
-              { label: "Servicios", value: "10+" },
-              { label: "Días libres", value: "Flexibles" },
+              { label: "Offices", value: "1" },
+              { label: "Employees", value: "10+" },
+              { label: "Services", value: "10+" },
+              { label: "Days off", value: "Flexible" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col-reverse">
                 <dt className="text-base font-medium text-white/80">

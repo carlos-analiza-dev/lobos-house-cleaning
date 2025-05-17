@@ -21,9 +21,9 @@ const Banner = () => {
     <div className="px-6 py-12 md:px-32 md:py-32 lg:px-44 lg:py-44">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {[
-          { icon: <ThumbsUp size={50} />, text: "100% Satisfacción" },
-          { icon: <ClockPlus size={50} />, text: "Profesionales Confiables" },
-          { icon: <BrushCleaning size={50} />, text: "Limpieza de Calidad" },
+          { icon: <ThumbsUp size={50} />, text: "100% Satisfaction" },
+          { icon: <ClockPlus size={50} />, text: "Reliable Professionals" },
+          { icon: <BrushCleaning size={50} />, text: "Quality Cleaning" },
         ].map((item, idx) => (
           <motion.div
             key={idx}

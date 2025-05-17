@@ -37,7 +37,7 @@ const DescServicios = () => {
         className="flex justify-center"
       >
         <h1 className="text-2xl md:text-4xl text-center">
-          Algunos servicios de limpieza que ofrecemos en{" "}
+          Some cleaning services we offer in{" "}
           <span className="text-blue-600 font-bold">
             Lobo&#39;s House Cleaning
           </span>
@@ -57,24 +57,28 @@ const DescServicios = () => {
             <span className="text-blue-600 font-bold">
               Lobo&#39;s House Cleaning
             </span>{" "}
-            es una plataforma confiable que te conecta con servicios
-            profesionales de limpieza y mudanza en tu área...
+            It&#39;s a reliable platform that connects you with professional
+            cleaning and moving services in your area...
           </h1>
 
           <div className="mt-5 space-y-4">
             <ServiciosCard
-              titulo="Limpieza Basica"
-              subtitulo="Servicios profesionales de limpieza basica"
+              titulo="Basic Cleaning"
+              subtitulo="Professional basic cleaning services."
               icono={<CircleCheckBig size={40} className="text-green-600" />}
             />
             <ServiciosCard
-              titulo="Limpieza profunda"
-              subtitulo="Limpieza a fondo para esos lugares difíciles de alcanzar"
+              titulo="
+Deep cleaning"
+              subtitulo="Deep cleaning for those hard-to-reach places
+"
               icono={<BrushCleaning size={40} className="text-green-600" />}
             />
             <ServiciosCard
-              titulo="Mudanza y organizacion"
-              subtitulo="Servicios profesionales de limpieza de final de arrendamiento"
+              titulo="Moving and organizing
+"
+              subtitulo="Professional end-of-lease cleaning services
+"
               icono={<Bus size={40} className="text-green-600" />}
             />
           </div>
@@ -86,25 +90,25 @@ const DescServicios = () => {
               color: "bg-red-200",
               icon: <TrendingUp />,
               value: "10+",
-              label: "Servicios disponibles",
+              label: "Available services",
             },
             {
               color: "bg-yellow-200",
               icon: <House />,
               value: "500+",
-              label: "Casas Limpiadas",
+              label: "Cleaned Houses",
             },
             {
               color: "bg-sky-200",
               icon: <User />,
               value: "10+",
-              label: "Limpiadores profesionales",
+              label: "Professional cleaners",
             },
             {
               color: "bg-green-200",
               icon: <Star />,
               value: "1k+",
-              label: "Clientes satisfechos",
+              label: "Satisfied customers",
             },
           ].map((item, idx) => (
             <motion.div

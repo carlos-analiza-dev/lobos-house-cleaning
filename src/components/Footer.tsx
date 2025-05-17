@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <p className="text-lg md:text-xl font-bold text-sky-400">
-            Nuestros Servicios
+            Our Services
           </p>
           <div className="mt-5">
             {servicios.map((servicio) => (
@@ -25,39 +25,39 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-lg md:text-xl font-bold text-sky-400">
-            Areas Cubiertas en Tennessee Chattanooga
+            Areas Covered in Tennessee Chattanooga
           </p>
           <div className="mt-5">
-            <p className="text-white mt-3">Tennessee Chattanooga Norte</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Sur</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Este</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Oeste</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Noreste</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Sureste</p>
-            <p className="text-white mt-3">Tennessee Chattanooga Centro</p>
+            <p className="text-white mt-3">Tennessee Chattanooga North</p>
+            <p className="text-white mt-3">Tennessee Chattanooga South</p>
+            <p className="text-white mt-3">Tennessee Chattanooga East</p>
+            <p className="text-white mt-3">Tennessee Chattanooga West</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Northeast</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Southeast</p>
+            <p className="text-white mt-3">Tennessee Chattanooga Center</p>
           </div>
         </div>
         <div>
           <p className="text-lg md:text-xl font-bold text-sky-400">
-            Detalles de la empresa
+            Company details
           </p>
           <div className="mt-5">
             <p className="text-white mt-3 flex gap-2 items-center">
               <MapPin /> 107 Culver St Chattanooga, TN 37415
             </p>
             <p className="text-white mt-3">
-              <span className="text-sky-400">Telefono:</span>
+              <span className="text-sky-400">Phone:</span>
               {""} +1 423-208-4947
             </p>
             <p className="text-white mt-3">
-              <span className="text-sky-400">Correo Electromico:</span>
+              <span className="text-sky-400">Email:</span>
               {""} loboshousecleaning@gmail.com
             </p>
           </div>
         </div>
         <div>
           <p className="text-lg md:text-xl font-bold text-sky-400">
-            Redes Sociales
+            Social networks
           </p>
           <div className="mt-5 flex gap-5 text-white">
             <Link

@@ -27,17 +27,17 @@ const QuienesSomos = () => {
           variants={fadeInUp}
           custom={1}
         >
-          <h1 className="text-2xl md:text-5xl font-bold">¿Quiénes Somos?</h1>
+          <h1 className="text-2xl md:text-5xl font-bold">Who Are We?</h1>
           <p className="mt-5 md:text-lg">
-            En{" "}
+            In{" "}
             <span className="text-sky-600 font-bold">
               Lobo&#39;s House Cleaning
             </span>
-            , somos una empresa comprometida con ofrecer servicios profesionales
-            de limpieza para hogares, oficinas y distintos entornos
-            residenciales y comerciales. Nuestro equipo está formado por
-            personal capacitado y dedicado a brindar soluciones eficientes,
-            confiables y adaptadas a las necesidades de cada cliente.
+            , We are a company committed to offering professional cleaning
+            services for homes, offices, and various residential and commercial
+            environments. Our team is made up of trained personnel dedicated to
+            providing efficient, reliable solutions tailored to each
+            client&#39;s needs.
           </p>
         </motion.div>
 

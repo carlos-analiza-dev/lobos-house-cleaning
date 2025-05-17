@@ -23,12 +23,12 @@ const Elegirnos = () => {
   };
 
   const beneficios = [
-    "Personal altamente capacitado",
-    "Productos ecológicos y seguros",
-    "Equipo profesional de última generación",
-    "Flexibilidad de horarios",
-    "Resultados garantizados",
-    "Precios competitivos",
+    "Highly trained staff",
+    "Ecological and safe products",
+    "State-of-the-art professional equipment",
+    "Flexible scheduling",
+    "Guaranteed results",
+    "Competitive pricing",
   ];
 
   const imagenes = [
@@ -42,7 +42,7 @@ const Elegirnos = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -65,7 +65,7 @@ const Elegirnos = () => {
             variants={fadeUp}
             custom={0}
           >
-            ¿Por qué elegirnos?
+            Why choose us?
           </motion.h2>
 
           <motion.p
@@ -73,8 +73,8 @@ const Elegirnos = () => {
             variants={fadeUp}
             custom={1}
           >
-            Ofrecemos los mejores servicios de limpieza con personal certificado
-            y productos de alta calidad que garantizan resultados excepcionales.
+            We offer the best cleaning services with certified personnel and
+            high-quality products that guarantee exceptional results.
           </motion.p>
 
           <motion.ul className="space-y-4 mb-8">
@@ -109,7 +109,7 @@ const Elegirnos = () => {
             custom={beneficios.length + 3}
             onClick={openWhatsApp}
           >
-            Contactar ahora
+            Contact now
             <svg
               className="w-5 h-5 ml-2"
               fill="none"

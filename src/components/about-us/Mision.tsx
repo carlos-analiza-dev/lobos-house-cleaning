@@ -29,12 +29,11 @@ const Mision = () => {
           custom={1}
           className="h-full flex flex-col justify-center order-1 md:order-2"
         >
-          <h1 className="text-xl md:text-5xl font-bold">Nuestra Misión</h1>
+          <h1 className="text-xl md:text-5xl font-bold">Our Mission</h1>
           <p className="mt-5 md:text-lg">
-            Brindar servicios de limpieza de alta calidad que generen espacios
-            más limpios, seguros y agradables para nuestros clientes, asegurando
-            puntualidad, profesionalismo y atención al detalle en cada tarea
-            realizada.
+            Provide high-quality cleaning services that create cleaner, safer,
+            and more pleasant spaces for our clients, ensuring punctuality,
+            professionalism, and attention to detail in every task performed.
           </p>
         </motion.div>
 

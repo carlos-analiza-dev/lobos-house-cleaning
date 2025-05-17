@@ -10,12 +10,12 @@ const NotFoundPage = () => {
       <div className="mt-8 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="flex justify-center">
           <p className="text-xl md:text-3xl font-bold">
-            Upssssssss, lo sentimos, no se pudo enconrar esta pagina,{" "}
+            Upssssssss, sorry, this page couldn&#39;t be found,{" "}
             <span
               onClick={() => router.back()}
               className="text-sky-500 hover:underline cursor-pointer"
             >
-              volver
+              return
             </span>
           </p>
         </div>

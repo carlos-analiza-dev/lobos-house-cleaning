@@ -7,7 +7,7 @@ const Estimados = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -26,7 +26,7 @@ const Estimados = () => {
         viewport={{ once: true }}
       >
         <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-center">
-          Nuestros estimados son totalmente gratis
+          Our estimates are completely free.
         </h1>
       </motion.div>
 

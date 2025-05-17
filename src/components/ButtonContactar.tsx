@@ -8,7 +8,7 @@ const ButtonContactar = ({ openWhatsApp }: Props) => {
       className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 self-start flex items-center cursor-pointer"
       onClick={openWhatsApp}
     >
-      Contactar ahora
+      Contact now
       <svg
         className="w-5 h-5 ml-2"
         fill="none"

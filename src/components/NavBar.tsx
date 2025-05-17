@@ -20,7 +20,7 @@ const NavBar = () => {
   const openWhatsApp = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
@@ -134,7 +134,7 @@ const NavBar = () => {
                       : "text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500"
                   } transition-colors duration-200`}
                 >
-                  Servicios
+                  Services
                   <ChevronDown
                     size={16}
                     className={`ml-1 transition-transform ${

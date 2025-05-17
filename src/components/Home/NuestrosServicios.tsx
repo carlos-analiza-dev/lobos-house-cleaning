@@ -32,83 +32,83 @@ const NuestrosServicios = () => {
   const servicios = [
     {
       icon: <House />,
-      titulo: "Limpieza Basica",
+      titulo: "Basic Cleaning",
       subtitulo:
-        "La limpieza regular del hogar que ayuda a mantener el orden y la higiene diaria o semanal, adaptado a tus necesidades.",
-      button_title: "Ver Limpieza Basica",
+        "Regular home cleaning that helps maintain order and hygiene daily or weekly, tailored to your needs.",
+      button_title: "See Basic Cleaning",
       href: "/services/basic",
     },
     {
       icon: <CheckCheck />,
-      titulo: "Limpieza Profunda",
+      titulo: "Deep Cleaning",
       subtitulo:
-        "Una limpieza detallada del hogar que va más allá de lo superficial, ideal para eliminar suciedad acumulada y alcanzar áreas difíciles, adaptada a tus necesidades.",
-      button_title: "Ver Limpieza Profunda",
+        "A detailed home cleaning that goes beyond the superficial, ideal for removing accumulated dirt and reaching difficult areas, tailored to your needs.",
+      button_title: "See Deep Cleaning",
       href: "/services/deep",
     },
     {
       icon: <AlignVerticalDistributeStart />,
-      titulo: "Limpieza de Cocinas",
+      titulo: "Kitchen Cleaning",
       subtitulo:
-        "Servicio especializado para dejar tu cocina reluciente, eliminando grasa, residuos y desinfección de superficies, adaptado a tus necesidades.",
-      button_title: "Ver Limpieza de Cocinas",
+        "Specialized service to leave your kitchen sparkling clean, removing grease and residue and disinfecting surfaces, tailored to your needs.",
+      button_title: "See Kitchen Cleaning",
       href: "/services/kitchen",
     },
     {
       icon: <BrickWall />,
-      titulo: "Limpieza y Cuidado de Pisos",
+      titulo: "Floor Cleaning and Care",
       subtitulo:
-        "Servicio enfocado en la limpieza profunda y mantenimiento de todo tipo de pisos, dejando las superficies brillantes, limpias y protegidas según tus necesidades.",
-      button_title: "Ver Limpieza y Cuidado de Pisos",
+        "Service focused on deep cleaning and maintenance of all types of floors, leaving surfaces shiny, clean, and protected according to your needs.",
+      button_title: "See Floor Cleaning and Care",
       href: "/services/floors",
     },
     {
       icon: <Shredder />,
-      titulo: "Servicio de Lavandería ",
+      titulo: "Laundry service",
       subtitulo:
-        "Lavado, secado y doblado de tu ropa con cuidado profesional. Ahorra tiempo y disfruta de prendas limpias, frescas y bien cuidadas.",
-      button_title: "Ver Servicio de Lavandería ",
+        "Professional washing, drying, and folding of your clothes. Save time and enjoy clean, fresh, and well-cared-for garments.",
+      button_title: "See Laundry Service ",
       href: "/services/laundry",
     },
     {
       icon: <Truck />,
-      titulo: "Mudanza y Organización",
+      titulo: "Moving and Organization",
       subtitulo:
-        "Traslados seguros y organizados, con apoyo en el embalaje, transporte y acomodo de tus pertenencias. Nos encargamos de que tu mudanza sea rápida, ordenada y sin estrés.",
-      button_title: "Ver Mudanza y Organización",
+        "Safe and organized transfers, with support for packing, transporting, and arranging your belongings. We make sure your move is quick, organized, and stress-free.",
+      button_title: "See Moving and Organizing",
       href: "/services/moving",
     },
     {
       icon: <Warehouse />,
-      titulo: "Limpieza de Garaje",
+      titulo: "Garage Cleaning",
       subtitulo:
-        "Eliminamos el desorden, limpiamos a fondo y organizamos tu garaje para que recuperes espacio y funcionalidad. Ideal para mantenerlo limpio, seguro y libre de acumulaciones innecesarias.",
-      button_title: "Ver Limpieza de Garaje",
+        "We eliminate clutter, thoroughly clean, and organize your garage to restore space and functionality. Ideal for keeping it clean, safe, and free of unnecessary clutter.",
+      button_title: "See Garage Cleaning",
       href: "/services/garage",
     },
     {
       icon: <Pickaxe />,
-      titulo: "Limpieza de Construcción",
+      titulo: "Construction Cleaning",
       subtitulo:
-        "Limpieza detallada después de una obra o remodelación. Eliminamos polvo, escombros y residuos para dejar el espacio listo, seguro y habitable. Ideal para obras nuevas o renovaciones.",
-      button_title: "Ver Limpieza de Construcción",
+        "Detailed cleaning after construction or remodeling. We remove dust, debris, and waste to leave the space ready, safe, and habitable. Ideal for new construction or renovations.",
+      button_title: "See Construction Cleaning",
       href: "/services/construction",
     },
     {
       icon: <LampDesk />,
-      titulo: "Limpieza de Oficinas",
+      titulo: "Office Cleaning",
       subtitulo:
-        "Mantenimiento diario/nocturno para espacios corporativos con personal discreto y eficiente.",
-      button_title: "Ver Limpieza de Oficinas",
+        "Daily/nightly maintenance for corporate spaces with discreet and efficient staff.",
+      button_title: "See Office Cleaning",
       category: "oficinas",
       href: "/services/office",
     },
     {
       icon: <Calendar />,
-      titulo: "Limpieza para Airbnb",
+      titulo: "Cleaning for Airbnb",
       subtitulo:
-        "Servicio entre huéspedes con estándares hoteleros y checklist fotográfico incluido.",
-      button_title: "Ver Servicio Airbnb",
+        "Guest service with hotel standards and photo checklist included.",
+      button_title: "See Airbnb Service",
       category: "airbnb",
       href: "/services/airbnb",
     },
@@ -123,7 +123,7 @@ const NuestrosServicios = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="text-2xl md:text-5xl font-bold">
-          Nuestros Servicios de Limpieza
+          Our Cleaning Services
         </h1>
       </motion.div>
 
@@ -134,8 +134,8 @@ const NuestrosServicios = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <p className="text-lg md:text-xl text-gray-700 text-center">
-          Ofrecemos varios servicios de limpieza profesional para cubrir todas
-          tus necesidades, realizados por expertos capacitados y de confianza.
+          We offer a variety of professional cleaning services to cover all your
+          needs, performed by trained and trusted experts.
         </p>
       </motion.div>
 

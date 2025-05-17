@@ -14,7 +14,7 @@ const ServicioById = ({ id }: Props) => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
 
     const message =
-      "Hola, estoy interesado en sus servicios de limpieza. ¿Podrían proporcionarme más información?";
+      "Hello, I'm interested in your cleaning services. Could you provide me with more information?";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -27,16 +27,16 @@ const ServicioById = ({ id }: Props) => {
     return (
       <div className="px-6 py-12 md:px-24 md:py-14 lg:px-44 lg:py-24 bg-gray-50 text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Servicio no encontrado
+          Service not found
         </h1>
         <p className="text-gray-600">
-          El servicio solicitado no está disponible en este momento.
+          The requested service is not available at this time.
         </p>
         <Link
           href="/"
           className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
         >
-          Ir al inicio
+          Go to start
         </Link>
       </div>
     );
@@ -58,7 +58,7 @@ const ServicioById = ({ id }: Props) => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
-              Beneficios de nuestro servicio
+              Benefits of our service
             </h2>
             <ul className="space-y-4">
               {servicio.benefits.map((benefit, index) => (
@@ -79,7 +79,7 @@ const ServicioById = ({ id }: Props) => {
           <div className="space-y-8">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                ¿Qué incluye este servicio?
+                What does this service include?
               </h3>
               <p className="text-gray-600 mb-6">{servicio.description}</p>
 
